@@ -7,11 +7,11 @@ class MyWindow:
     def __init__(self,window):
         self.lbl1 = Label(window,text="Standard Calculator")
         self.lbl1.grid(row = 1,column = 1)
-        self.lbl2 = Label(window,text="Input 1st Number:")
+        self.lbl2 = Label(window,text="Input the 1st Number:")
         self.lbl2.grid(row=2,column=0)
         self.entry3 = Entry(window)
         self.entry3.grid(row=2, column=1, padx=4)
-        self.lbl3=Label(window,text="Input 2nd Number:")
+        self.lbl3=Label(window,text="Input the 2nd Number:")
         self.lbl3.grid(row=3,column=0)
         self.entry4 = Entry(window)
         self.entry4.grid(row=3, column=1, padx=4)
