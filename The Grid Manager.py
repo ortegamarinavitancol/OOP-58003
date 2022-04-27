@@ -1,6 +1,6 @@
 from tkinter import *
 window = Tk()
-window.title("The Geometry Manager")
+window.title("The Grid Manager")
 window.geometry("500x400+20+10")
 
 class MyWindow:
