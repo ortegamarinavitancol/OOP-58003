@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Find the least number")
-window.geometry("400x300+20+10")
+window.geometry("500x300+20+10")
 
 def findSmallest():
     L = []
@@ -19,7 +19,7 @@ conOfent2 = StringVar()
 ent2 = Entry(window,bd=3,textvariable=conOfent2)
 ent2.grid(row=1, column = 1)
 lbl3 = Label(window,text = "Enter the second number:")
-lbl3.grid(row=2, column=0)
+lbl3.grid(row=2, column=0, sticky=W)
 conOfent3=StringVar()
 ent3 = Entry(window,bd=3,textvariable=conOfent3)
 ent3.grid(row=2,column=1)
@@ -31,7 +31,7 @@ ent4.grid(row=3, column=1)
 
 btn1 = Button(window,text = "Find the smallest no.",command=findSmallest)
 btn1.grid(row=4, column = 1)
-lbl5 = Label(window,text="The smallest number:")
+lbl5 = Label(window,text="The smallest number among the three is:")
 lbl5.grid(row=5,column=0,sticky=W)
 conOfSmallest = StringVar()
 ent5 = Entry(window,bd=3,state="readonly",textvariable=conOfSmallest)
